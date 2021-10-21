@@ -5,6 +5,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():  # put application's code here
+    return render_template('hello1.html')
+
+
+
+@app.route('/hello')
+def hello():  # put application's code here
     return render_template('hello.html')
 
 
